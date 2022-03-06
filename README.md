@@ -22,6 +22,8 @@ Once installed, add this plugin to your `tsconfig.json`:
 }
 ```
 
+Use workspace typescript version
+
 ## Thanks
 
 Brody McKee <mrmckeb@hotmail.com>
