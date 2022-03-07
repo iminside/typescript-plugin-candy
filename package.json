@@ -18,7 +18,6 @@
         "icss-utils": "^5.1.0",
         "less": "^4.1.2",
         "postcss": "^8.4.7",
-        "postcss-icss-keyframes": "^0.2.1",
         "postcss-icss-selectors": "^2.0.3",
         "postcss-import-sync2": "^1.2.0",
         "sass": "^1.49.9",

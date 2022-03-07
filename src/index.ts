@@ -1,9 +1,8 @@
 import tss from 'typescript/lib/tsserverlibrary'
 import path from 'path'
 import postcss from 'postcss'
-import postcssIcssSelectors from 'postcss-icss-selectors'
-import postcssIcssKeyframes from 'postcss-icss-keyframes'
 import postcssImportSync from 'postcss-import-sync2'
+import postcssIcssSelectors from 'postcss-icss-selectors'
 import { getDtsSnapshot, isStyle, isRelative } from './utils'
 
 function init({ typescript: ts }: { typescript: typeof tss }): ts.server.PluginModule {
@@ -12,7 +11,6 @@ function init({ typescript: ts }: { typescript: typeof tss }): ts.server.PluginM
         const processor = postcss()
             .use(postcssImportSync())
             .use(postcssIcssSelectors())
-            .use(postcssIcssKeyframes())
 
         const { createLanguageServiceSourceFile } = ts
 
