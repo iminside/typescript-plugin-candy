@@ -1,6 +1,6 @@
 # Typescript Plugin Candy
 
-A TypeScript language service plugin providing support for CSS Candy Modules
+A TypeScript language service plugin providing support for [CSS Candy Modules](https://github.com/iminside/candy-loader)
 
 <div align="center">
 <img src="https://img.shields.io/github/workflow/status/iminside/typescript-plugin-candy/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" /> 
