@@ -1,6 +1,6 @@
 {
     "name": "typescript-plugin-candy",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "A typescript language service candy plugin",
     "author": "Denis Churbanov",
     "license": "MIT",
