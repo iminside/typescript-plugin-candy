@@ -39,6 +39,7 @@ export const getDtsSnapshot = (
     dts.push(CANDY_SIGN)
     dts.push(`import type { ComponentProps } from 'react'`)
     dts.push(`type Props = {`)
+    dts.push('[k: `__${string}`]: string | number')
 
     if (classnames.length) {
         for (const classname of classnames) {
