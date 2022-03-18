@@ -58,10 +58,18 @@ export const getDtsSnapshot = (
         const tag = tags[i]
         const component = components[i]
 
-        dts.push(`declare const ${component}: Component<'${tag}'>`)
+        dts.push(`export const ${component}: Component<'${tag}'>`)
     }
 
-    dts.push(`export {${components.join(`, `)}}`)
+    dts.push(`declare const styles: {`)
+
+    for (const classname of classnames) {
+        dts.push(`${classname}: string`)
+    }
+
+    dts.push(`}`)
+
+    dts.push(`export default styles`)
 
     return ts.ScriptSnapshot.fromString(dts.join(`\n`))
 }
